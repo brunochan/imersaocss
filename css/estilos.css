@@ -2,7 +2,7 @@
 
 body {
     background-image: url('https://www.itl.cat/pngfile/big/210-2101051_dark-web-scanning-background-image-for-website-of.jpg');
-      background-size: auto 100vh;
+      background-size: cover;
       font-family: Arial;
       height: 100vh;
       backdrop-filter: blur(2px);
@@ -10,7 +10,10 @@ body {
   }
   
   .menu {
-    background-color: white;
+    margin: 15px;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 5px;
+    box-shadow: 0 0 5px gray;
   }
   
   .menu ul {
@@ -23,7 +26,7 @@ body {
   }
   
   a {
-    color: darkblue;
+    color: white;
     text-decoration: none;
   }
   
