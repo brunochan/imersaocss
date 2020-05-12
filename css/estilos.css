@@ -1,59 +1,59 @@
 /* Aula inicial :D */
 
 body {
-    background-image: url('https://www.itl.cat/pngfile/big/210-2101051_dark-web-scanning-background-image-for-website-of.jpg');
-      background-size: cover;
-      font-family: Arial;
-      height: 100vh;
-      backdrop-filter: blur(2px);
-      
-  }
-  
- 
-  .menu ul {
-    display: flex;
-    justify-content: space-around;
-    padding: 0;
-  }
-  
-  .menu li {
-    list-style: none;
-    margin: 15px 0px;
-    background: rgba(255, 255, 255, 0.3);
-    padding: 20px 220px;
-    box-shadow: 0px 0px 5px gray;
-  }
-  
-  a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
-  .site-subtitle,
-  .site-title {
-    color: whitesmoke;
-    text-align: center;
-  }
-  
-  .site-subtitle {
-    font-style: italic;
-  }
-  
-  .bg-text {
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
-    color: white;
-    font-weight: bold;
-    border: 3px solid #f1f1f1;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    width: 80%;
-    padding: 20px;
-    text-align: center;
+  background-image: url('https://www.itl.cat/pngfile/big/210-2101051_dark-web-scanning-background-image-for-website-of.jpg');
+    background-size: cover;
+    font-family: Arial;
+    height: 100vh;
+    backdrop-filter: blur(2px);
+}
+
+
+.menu ul {
+display: flex;
+justify-content: space-around;
+padding: 0;
+}
+
+.menu li {
+list-style: none;
+margin: 0 auto;
+background: rgba(255, 255, 255, 0.3);
+padding: 20px 220px;
+box-shadow: 0px 0px 5px gray;
+}
+
+a {
+color: white;
+text-decoration: none;
+}
+
+a:hover {
+text-decoration: underline;
+}
+
+.site-subtitle,
+.site-title {
+color: whitesmoke;
+text-align: center;
+}
+
+.site-subtitle {
+font-style: italic;
+}
+
+.bg-text {
+background-color: rgb(0,0,0); /* Fallback color */
+background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+color: white;
+font-weight: bold;
+border: 3px solid #f1f1f1;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+z-index: 2;
+width: 80%;
+padding: 20px;
+text-align: center;
+}  
