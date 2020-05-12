@@ -9,13 +9,7 @@ body {
       
   }
   
-  .menu {
-    margin: 15px;
-    background: rgba(255, 255, 255, 0.3);
-    padding: 5px;
-    box-shadow: 0 0 5px gray;
-  }
-  
+ 
   .menu ul {
     display: flex;
     justify-content: space-around;
@@ -23,6 +17,10 @@ body {
   
   .menu li {
     list-style: none;
+    margin: 15px 0px;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 20px 210px;
+    box-shadow: 0px 0px 5px gray;
   }
   
   a {
