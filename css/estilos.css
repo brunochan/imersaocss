@@ -88,6 +88,7 @@ text-align: center;
 
 .site-subtitle {
 font-style: italic;
+padding: 20px;
 }
 
 section {
@@ -100,11 +101,11 @@ section {
   
 }
 
-h2 {
+section h2 {
   color: black;
   font-family: ;
   font-size: 1.5em;
-  padding: 50px;
+  padding: 220px 50px 50px 50px;
   text-align: center; 
 }
 
@@ -116,7 +117,7 @@ h2 {
 
 .portfolio {
   display: flex;
+  padding: 20px 50px 250px 50px;
   justify-content: space-between;
-  padding: 0PX;
+  flex-wrap: wrap;
 }
-
