@@ -10,7 +10,7 @@
 body {
   background-image: url('https://lh3.googleusercontent.com/proxy/wR4ETt8BmKCG5TELmHta7-WZOzwBIOGmZfh04dg6Cc0NgHGN7rOTeQ-pww8LTNNCdvVKQbya6xuPiaRYnPUw7eDlbplbC6JAtTsUJxYSzc7Raktoo_rHf11TgnfJOTmf376fsYipEQTV1WKsybNW');
     background-size: cover;
-    font-family: Arial;
+    font-family: 'Times New Roman', Times, serif;
     height: 100vh;
     backdrop-filter: blur(2px);
 }
@@ -87,8 +87,8 @@ text-align: center;
 }
 
 .site-subtitle {
-font-style: italic;
-padding: 20px;
+  font-style: italic;
+  padding: 20px;
 }
 
 section {
@@ -105,7 +105,7 @@ section h2 {
   color: black;
   font-family: ;
   font-size: 1.5em;
-  padding: 220px 50px 50px 50px;
+  padding: 250px 50px 50px 50px;
   text-align: center; 
 }
 
@@ -115,9 +115,10 @@ section h2 {
   
 }
 
-.portfolio {
+.portfolio-items {
   display: flex;
   padding: 20px 50px 250px 50px;
   justify-content: space-between;
   flex-wrap: wrap;
 }
+
