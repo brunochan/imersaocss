@@ -1,73 +1,219 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bruno Chan</title>
-    <link rel="stylesheet" href="css/estilos.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Gruppo&display=swap" rel="stylesheet">
-</head>
-<body>
-    <header>
-        <nav class="menu">
-          <ul>
-            <li><a href="#Quem-sou">Sobre</a></li>
-            <li><a href="#portfolio-items">Portfólio</a></li>
-            <li><a href="#Contato">Contato</a></li>
-          </ul>
-        </nav>
-        <div class="bg-text">
-        <h1 class="site-title">Bruno Chan</h1>
-        <h2 class="site-subtitle">web developer</h2>
-        </div>
-    </header>
-    
-    <section1>
-      <h2><class="anime" id="Quem-sou"></class>Quem sou</h2>
-    </section1> 
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Site v.2</title>
+<link rel="stylesheet" href="css/estilo.css">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Gruppo&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/9562c886e8.js" crossorigin="anonymous"></script>
 
-    <section2>
-      <div class="Quem-sou">
-        <p>Meu nome é Bruno Roberto Chan, 30<br>
-           Sou graduado em Turismo pela Unioeste<br>
-           Pós graduando em MBA em Coaching Aplicado a Gestão de Pessoas<br>
-           Estudante de desenvolvimento web
-        </p>
-      </div>  
-      
-    </section2>
-    
-    <section>
-      <h3><class="anime" id="portfolio-items"></class>Portfólio</h3>
-    </section>
-    
-    <section> 
-      <div class="portfolio-items"> 
-        <figure>
-          <a href="https://codepen.io/bruno_chan"><img class="img-portfolio" src="https://blog.codepen.io/wp-content/uploads/2012/06/Button-White-Large.png" alt="CodePen"></a>
-          <figcaption>CodePen</figcaption>
-        </figure>
-        <figure>
-          <a href="https://github.com/brunochan"><img class="img-portfolio" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSqlIi2ELb01zxgwhMy3s5EBWumWWM7qIAnO-_vEpl0V3GaC-I4&usqp=CAU" alt=">GitHub"></a>
-          <figcaption>GitHub</figcaption>
-        </figure>
-        <figure>
-          <a href="https://www.instagram.com/brunorchan/"><img class="img-portfolio" src="https://www.giselleapicela.com/wp-content/uploads/2018/11/Instagram-Logo.png" alt="Instagram"></a>
-          <figcaption>Instagram</figcaption>
-        </figure>
-        <figure>
-          <a href="https://www.facebook.com/brunorchan"><img class="img-portfolio" src="https://cdn3.iconfinder.com/data/icons/capsocial-round/500/facebook-512.png" alt="Facebook"></a>
-          <figcaption>Facebook</figcaption>
-        </figure>
+
+<style>
+  
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}  
+  
+.links{   /*menu*/
+  width: 100vw;
+  height: 50px;
+  position: fixed;
+  display: flex;
+}
+  
+.links label{
+  padding: 10px 0;
+  flex-grow: 1;
+  cursor: pointer;
+  transition: all .4s;
+  text-align: center;
+  font-family: 'Cinzel Decorative', cursive;;
+  font-size: 100%;
+  color: white;
+}  
+  
+.links label:hover{
+  background-color: rgba(255,255,255,0.2);
+}  
+  
+.scroll input{
+  display: none;
+}  
+  
+.capa{
+  width: 100vw;
+  height: 100vh;
+  /*display: flex;
+  justify-content: center;
+  align-items: center;*/
+}
+.sobre{
+  width: 100vw;
+  height: 100vh;
+}
+.portfolio{
+  width: 100vw;
+  height: 100vh;
+}
+.social{
+  width: 100vw;
+  height: 90vh;
+}    
+.rodape{
+  width: 100vw;
+  height: 10vh;
+}
+  
+.scroll{
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+} 
+  
+.sections{
+  transition: all .4s;
+}
+  
+#rd_Sobre:checked ~ .sections{
+  margin-top: -100vh;
+}
+#rd_Portfolio:checked ~ .sections{
+  margin-top: -200vh;
+}
+#rd_Social:checked ~ .sections{
+  margin-top: -300vh;
+}
+
+
+</style>  
+</head>
+  
+<body>
+<nav class="links">
+  <label for="rd_Capa">Capa</label>
+  <label for="rd_Sobre">Sobre</label>
+  <label for="rd_Portfolio">Portfólio</label>
+  <label for="rd_Social">Social</label>
+  
+  
+</nav>  
+  
+<div class="scroll">
+  <input type="radio" name="grupo" id="rd_Capa" checked="true">
+  <input type="radio" name="grupo" id="rd_Sobre">
+  <input type="radio" name="grupo" id="rd_Portfolio">
+  <input type="radio" name="grupo" id="rd_Social">
+  
+  
+  
+<section class="sections">
+  
+  <section class="capa" id="Capa">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h1 class="text-center">Bruno Chan</h1>
+          <h2 class="lead text-center">Web Developer</h2>
+        </div>
       </div>
-    </section> 
-    <section>
-      <h4><class="anime" id="Contato"></class>Contato
-        <br><br>
-        <p>(99) 99999-9999</p>
-        <p>bruno@chan.com.br</p>
-      </h4>
-    </section>
-    
+    </div>  
+  </section>
+  
+  <section class="sobre" id="Sobre">
+    <h1 class="text-center">Sobre</h1>
+    <div class="conteudo">
+      <img src="https://scontent.figu5-1.fna.fbcdn.net/v/t1.0-9/c240.0.720.720a/s851x315/1094951_495404803875222_64201970_n.jpg?_nc_cat=102&_nc_sid=da31f3&_nc_eui2=AeEmJorGG2hyUKsitoyufEX-zc5YPk0GcBbNzlg-TQZwFuME8rLG0c06d_VOcHzqvIo0SAXS_JAvm2lufK8M3Z1b&_nc_ohc=r1JDsd3RgVgAX_K76gl&_nc_ht=scontent.figu5-1.fna&oh=fce97221b80dbd505a2cd9a4bf377605&oe=5EE52F07" alt="Bruno Chan">
+      <div class="texto">
+        <p> Sou aprendiz em desenvolvimento web<br> e busco oportunidades de desenvolvimento<br> para atuação na área.
+        </p>  
+      </div>
+    </div>
+  </section> 
+  
+  <section class="portfolio" id="Portfolio">
+    <h1 class="text-center">Portfólio</h1>
+    <h2 class="lead text-center">Acompanhe meus projetos</h2>
+    <div class="portfolio-cards">
+      
+        <figure>
+        <img class="img-portfolio" src="https://www.fotoefeitos.com/efectos/grandes/coloca-tu-foto-en-un-fotograma.jpg" alt="Projeto 1">
+          <figcaption>Projeto 1</figcaption>
+        </figure>
+      </a>
+      <a href="#">
+        <figure>
+          <img class="img-portfolio" src="https://www.fotoefeitos.com/efectos/grandes/coloca-tu-foto-en-un-fotograma.jpg" alt="Projeto 2">
+          <figcaption>Projeto 2</figcaption>
+        </figure>
+      </a>
+      <a href="#">
+        <figure>
+          <img class="img-portfolio" src="https://www.fotoefeitos.com/efectos/grandes/coloca-tu-foto-en-un-fotograma.jpg" alt="Projeto 3">
+          <figcaption>Projeto 3</figcaption>
+        </figure>
+      </a>
+      <a href="#">
+        <figure>
+          <img class="img-portfolio" src="https://www.fotoefeitos.com/efectos/grandes/coloca-tu-foto-en-un-fotograma.jpg" alt="Projeto 4">
+          <figcaption>Projeto 4</figcaption>
+        </figure>
+      </a>
+      <a href="#">
+        <figure>
+          <img class="img-portfolio" src="https://www.fotoefeitos.com/efectos/grandes/coloca-tu-foto-en-un-fotograma.jpg" alt="Projeto 5">
+          <figcaption>Projeto 5</figcaption>
+        </figure>
+      </a>
+      <a href="#">
+        <figure>
+          <img class="img-portfolio" src="https://www.fotoefeitos.com/efectos/grandes/coloca-tu-foto-en-un-fotograma.jpg" alt="Projeto 6">
+          <figcaption>Projeto 6</figcaption>
+         </figure>
+      </a>
+    </div>
+  </section>
+  
+  <section class="social" id="Social">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h1 class="text-center">Social</h1>
+          <div class="grid icons">
+            <a target="_blank" href="https://codepen.io/bruno_chan">
+              <i class="fab fa-codepen"aria-hidden="true"></i>
+            </a>
+            <a target="_blank" href="https://github.com/brunochan">
+              <i class="fab fa-github" aria-hidden="true"></i>
+            </a>
+            <a target="_blank" href="www.linkedin.com/in/bruno-chan">
+              <i class="fab fa-linkedin-in"aria-hidden="true"></i>
+            </a>
+            <a target="_blank" href="https://www.facebook.com/brunorchan">
+              <i class="fab fa-facebook-square"aria-hidden="true"></i>
+            </a>
+            <a target="_blank" href="https://www.instagram.com/brunorchan/">
+              <i class="fab fa-instagram"aria-hidden="true"></i>
+            </a>
+          </div>  
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="rodape" id="Rodape">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <p class="text-center">Direitos Reservados®</p>
+        </div>
+      </div>
+    </div>
+  </section>  
+  
+</section>
+  
 </body>
 </html>
