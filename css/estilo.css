@@ -66,7 +66,7 @@ body {
  /*****SECTION SOBRE*****/   
 
 .Sobre{
-  background-color: steelblue;
+  background-color: rgb(6, 12, 59);
   display: grid;
   gap: 2em;
   grid-template-columns: 1;
@@ -91,9 +91,10 @@ body {
   align-items:center;
   justify-content: center;
   text-align: center;
-  margin-top: 80px;
+  margin-top: 40px;
   margin-left: auto;
-  margin-right: auto
+  margin-right: auto;
+  min-height: fit-content;
 }
 
 @media (min-width: 560px) {
@@ -110,7 +111,7 @@ body {
     align-items:center;
     justify-content: center;
     text-align: left;
-    max-width: 900px
+    max-width: 900px;
   }
 }
 
@@ -125,6 +126,9 @@ body {
   height: 350px;
   object-fit: cover;
   border-radius: 8px;
+  box-shadow: 2px 2px 5px #aaa;
+  -webkit-box-shadow: 2px 2px 5px #aaa;
+  -moz-box-shadow: 2px 2px 5px #aaa;
   margin: 0 auto;
   /*margin-left: 350px;*/
 }
@@ -140,10 +144,20 @@ body {
   text-align: justify;
 }
 
+/*****SECTION VAZIO*****/
+
+.vazio{
+  background-image: url('https://c.wallhere.com/photos/77/ce/nyc_newyorkcity_trip_travel_blue_usa_ny_newyork-640639.jpg!d');
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}  
+
 /*****SECTION PORTFÓLIO*****/    
     
 .Portfolio{
-  background-color: steelblue;
+  background-color: rgb(6, 12, 59);
 }    
 
 .portfolio h1{
@@ -168,6 +182,7 @@ body {
   font-size: 16px;
   gap: 2em;
   text-align: center;
+  min-height: fit-content; /* tentei usar esse pra limitar o conteudo dentro da pagina*/
 }
   
 @media(min-width: 560px){
@@ -278,7 +293,7 @@ p{
 /*****SECTION RODAPÉ*****/  
 
 .rodape{
-  background-color: black;
+  background-color: rgb(6, 12, 59);
   color: whitesmoke;
   text-align: center;
   padding: 10px;
