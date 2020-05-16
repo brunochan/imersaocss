@@ -1,233 +1,305 @@
+/*****BODY STRUCTURE*****/
+
 .links .rd_Sobre{
     transition: color 2s;
   }
   
-  .links .rd_Sobre:hover{
-    color: black;
+.links .rd_Sobre:hover{
+  color: black;
+}
+  
+body {
+  font-family: 'Gruppo', cursive;
+  height: 100vh;
+}
+    
+/*se a tela tiver pelo menos 400px vai carregar estes estilos*/
+@media (min-width: 400px) {
+  body {
+    font-size: 14px;
   }
-  
-  #Capa{
-    background-image: url('https://c.wallhere.com/photos/77/ce/nyc_newyorkcity_trip_travel_blue_usa_ny_newyork-640639.jpg!d');
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    color: white;
-    padding-top: 300px;
-    padding-bottom: 300px;
+}
+    
+/*breackpoint*/
+@media (min-width: 600px) {
+  body {
+    font-size: 18px;
   }
+}
     
-    #Sobre{
-      background-color: #aaa;
-      background-position: center top;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-attachment: fixed;
-      padding-top: 80px;
-      padding-bottom: 50px;
-      padding-left: 90px;
-      padding-right: 90px;
-    }
-    
-    #Portfolio{
-      background-color: #aaa;
-    }
-    
-    #Social{
-      background-image: url('https://c.wallhere.com/photos/77/ce/nyc_newyorkcity_trip_travel_blue_usa_ny_newyork-640639.jpg!d');
-    }
-  
-    #Rodape{
-      background-color: black;
-      color: white;
-      text-align: center;
-      padding: 10px;
-    }  
-    
-    body {
-      font-family: 'Gruppo', cursive;
-      height: 100vh;
-    }
-    
-    /*se a tela tiver pelo menos 400px vai carregar estes estilos*/
-    @media (min-width: 400px) {
-      body {
-        font-size: 14px;
-      }
-    }
-    
-    /*breackpoint*/
-    @media (min-width: 600px) {
-      body {
-        font-size: 18px;
-      }
-    }
-    
-    @media (min-width: 1200px) {
-      body {
-        font-size: 22px;
-      }
-    }
-    
-    .capa h1{
-      color: white;
-      font-size: 4em;
-      text-align: center;
-    }
-    
-    .capa h2{
-      color: white;
-      font-style: italic;
-      padding: 20px;
-      text-align: center;
-    }
-    
-    .sobre h1{
-      color: black;
-      font-family: 'Gruppo', cursive;
-      font-size: 3em;
-      text-align: center;
-    }
-    
-    .conteudo {
-        display: grid;
-        gap: 2em;
-      grid-template-columns: 1;
-        align-content: center;
-        align-items:center;
-        justify-content: center;
-        text-align: center;
-        margin-top: 80px;
-    }
-    
-        @media(min-width: 800px){
-            .conteudo {
-                gap: 2em;
-                grid-template-columns: 40% 60%;
-                align-content: center;
-                align-items:center;
-                justify-content: center;
-                text-align: left;
-            }
-        }
-    
-    .sobre img{
-        width: 300px;
-        height: 300px;
-        object-fit: cover;
-        border-radius: 8px;
-        margin: 0 auto;
-    }
-    .texto p{
-      color: black;
-      font-family: 'Gruppo', cursive;
-      margin: 1em 0;
-    }
-    
-    .portfolio h1{
-      color: black;
-      font-family: 'Gruppo', cursive;
-      font-size: 3em;
-      padding-top: 80px;
-      padding-bottom: 5px;
-      text-align: center; 
-    }
-    
-    .portfolio h2{
-      color: black;
-      font-family: 'Gruppo', cursive;
-      font-size: 20px;
-      font-style: italic;
-      padding-bottom: 30px;
-      text-align: center;
-    }
-    
-    .portfolio-cards{
-      display:grid;
-      gap: 20px;
-      grid-template-columns: 1;
-      align-content: center;
-      align-items: baseline;
-      justify-content: center;
-      text-align: center;
-      
-    }
-  
-    @media(min-width: 560px){
-            .portfolio-cards{
-                gap: 20px;
-                grid-template-columns: repeat(2, 45%);
-            }
-        }
-    
-        @media (min-width: 900px){
-            .portfolio-cards {
-                gap: 25px;
-                grid-template-columns: repeat(3, 25%);
-            }
-        }
-    
-    .portfolio-cards figure{
-        margin: 10px 5px;
-    }
-    .portfolio-cards figcaption {
-        margin: 5px 0;
-    }
-    .img-portfolio{
-      height: 120px;
-      width: 160px;
-      border-radius: 8px;
-      object-fit: cover;
-      transition: transform 500ms;
-    }
-  
-  .img-portfolio:hover{
-    transform: scale(1);
+@media (min-width: 1200px) {
+  body {
+    font-size: 22px;
   }
-  
-    .portfolio-cards figure a:active,
-    .portfolio-cards figure a:hover{
-        opacity: 0.8;
-    }
-  
-  a{
-      color:#27496d;
-      text-decoration: none;
-      text-transform: uppercase;
-      font-weight: bold;
+}
+
+/*****SECTION CAPA*****/
+
+.Capa{
+  background-image: url('https://c.wallhere.com/photos/77/ce/nyc_newyorkcity_trip_travel_blue_usa_ny_newyork-640639.jpg!d');
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  padding-top: 300px;
+  padding-bottom: 300px;
+}
+    
+.capa h1{
+  color: whitesmoke;
+  font-size: 4em;
+  text-align: center;
+}
+    
+.capa h2{
+  color: whitesmoke;
+  font-style: italic;
+  padding: 20px;
+  text-align: center;
+}
+
+.titulo {
+  transform: ; /*fazer o efeito de aparecer o título quando carregar a pagina*/
+}
+
+ /*****SECTION SOBRE*****/   
+
+.Sobre{
+  background-color: steelblue;
+  display: grid;
+  gap: 2em;
+  grid-template-columns: 1;
+  align-content: center;
+  align-items:center;
+  justify-content: center;
+  text-align: center;
+}
+
+.sobre h1{
+  color: whitesmoke;
+  font-family: 'Gruppo', cursive;
+  font-size: 3em;
+  text-align: center;
+}
+    
+.conteudo {
+  display: grid;
+  gap: 2em;
+  grid-template-columns: 1;
+  align-content: center;
+  align-items:center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 80px;
+  margin-left: auto;
+  margin-right: auto
+}
+
+@media (min-width: 560px) {
+  .conteudo{
+    max-width: 900px;
   }
-  a:active,
-  a:hover{
-      color: #192e44;
-      text-decoration: none;
+}
+
+@media(min-width: 800px){
+  .conteudo {
+    gap: 2em;
+    grid-template-columns: 40% 60%;
+    align-content: center;
+    align-items:center;
+    justify-content: center;
+    text-align: left;
+    max-width: 900px
   }
-  p{
-      font-size: 16px;
-      line-height: 1.9em;
+}
+
+@media (min-width: 1200px) {
+  .conteudo{
+    max-width: 900px;
   }
+}
+   
+.sobre img{
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 0 auto;
+  /*margin-left: 350px;*/
+}
+
+.texto p{
+  color: whitesmoke;
+  font-family: 'Gruppo', cursive;
+  font-size: 1em;
+  margin: 1em 0;
+  /*margin-right: 350px;
+  margin-left: 50px;*/
+  margin-bottom: 200px;
+  text-align: justify;
+}
+
+/*****SECTION PORTFÓLIO*****/    
+    
+.Portfolio{
+  background-color: steelblue;
+}    
+
+.portfolio h1{
+  color: whitesmoke;
+  font-family: 'Gruppo', cursive;
+  font-size: 3em;
+  padding-top: 80px;
+  padding-bottom: 5px;
+  text-align: center; 
+}
+    
+.portfolio h2{
+  color: whitesmoke;
+  font-family: 'Gruppo', cursive;
+  font-size: 20px;
+  font-style: italic;
+  text-align: center;
+}
+    
+.portfolio-cards{
+  display:grid;
+  font-size: 16px;
+  gap: 2em;
+  text-align: center;
+}
   
-  .social h1{
-    color: white;
-    font-family: 'Gruppo', cursive;
-    font-size: 3em;
-    text-align: center;
-    padding-top: 100px;
-    padding-bottom: 80px;
-  }  
-  
-  .social a{
-    color: white;
-    font-size: 5em;
-    margin: 20px;
-    transition: text-shadow 0.6s;
+@media(min-width: 560px){
+  .portfolio-cards{
+    grid-template-columns: repeat(2, 240px);
+    align-content: center;
+    justify-content: center;
+    height: calc(100vh - 8em - 48px)
   }
-  
-  .social a:active,
-  .social a:hover{
-    text-shadow: 0px 0px 15px rgba(255,255,255,0.6);
+}
+
+@media(min-width: 880px){
+  .portfolio-cards{
+    grid-template-columns: repeat(3, 240px);
+    align-content: center;
+    justify-content: center;
+    height: calc(100vh - 8em - 48px)
   }
-  
-  .social .icons{
-    text-align: center;
+}
+
+@media(min-width: 1200px){
+  .portfolio-cards{
+    grid-template-columns: repeat(4, 240px);
+    align-content: center;
+    justify-content: center;
+    height: calc(100vh - 8em - 48px)
   }
-      
+}
+    
+.portfolio-cards figure{
+  margin: 10px 5px;
+}
+
+.portfolio-cards figcaption {
+  margin: 35px 0;
+}
+
+.portfolio-cards figure a:active,
+.portfolio-cards figure a:hover{
+  opacity: 0.8;
+}
+    
+.img-portfolio{
+  height: 120px;
+  width: 160px;
+  border-radius: 8px;
+  object-fit: cover;
+  transition: transform 500ms;
+}
+
+.img-portfolio:hover{
+  transform: scale(1.2);
+}
+    
+a{
+  color:whitesmoke;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+a:active,
+a:hover{
+  color: #192e44;
+  text-decoration: none;
+}
+
+p{
+  font-size: 16px;
+  line-height: 1.9em;
+}
+
+/*****SECTION SOCIAL*****/  
+  
+.Social{
+  background-image: url('https://c.wallhere.com/photos/77/ce/nyc_newyorkcity_trip_travel_blue_usa_ny_newyork-640639.jpg!d');
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.social h1{
+  color: whitesmoke;
+  font-family: 'Gruppo', cursive;
+  font-size: 3em;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 80px;
+}  
+  
+.social a{
+  color: whitesmoke;
+  font-size: 5em;
+  margin: 20px;
+  transition: text-shadow 0.5s;
+}
+  
+.social a:active,
+.social a:hover{
+  text-shadow: 0px 0px 15px rgba(255,255,255,0.7);
+}
+  
+.social .icons{
+  text-align: center;
+}
+
+/*****SECTION RODAPÉ*****/  
+
+.rodape{
+  background-color: black;
+  color: whitesmoke;
+  text-align: center;
+  padding: 10px;
+}  
+
+.rodape h1{
+  font-family: 'Gruppo', cursive;
+  font-size: 18px;
+  padding-bottom: 17px;
+}
+
+.rodape a{
+  color: whitesmoke;
+  font-size: 16px;
+  font-family: 'Gruppo', cursive;
+  margin: 60px;
+  transition: text-shadow 0.5s;
+}
+
+.rodape a:active,
+.rodape a:hover{
+  text-decoration: underline;
+  text-shadow: 0px 0px 15px rgba(255,255,255,0.6);
+}

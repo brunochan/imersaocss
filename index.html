@@ -59,18 +59,18 @@
 }
 .social{
   width: 100vw;
-  height: 90vh;
+  height: 88vh;
 }    
 .rodape{
   width: 100vw;
-  height: 10vh;
+  height: 12vh;
 }
   
 .scroll{
   display: flex;
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
+  overflow: scroll;  /*elimina a barra de rolagem*/
 } 
   
 .sections{
@@ -92,6 +92,7 @@
 </head>
   
 <body>
+
 <nav class="links">
   <label for="rd_Capa">Capa</label>
   <label for="rd_Sobre">Sobre</label>
@@ -114,7 +115,7 @@
   <section class="capa" id="Capa">
     <div class="container">
       <div class="row">
-        <div class="col-xs-12">
+        <div class="titulo">
           <h1 class="text-center">Bruno Chan</h1>
           <h2 class="lead text-center">Web Developer</h2>
         </div>
@@ -127,7 +128,7 @@
     <div class="conteudo">
       <img src="https://scontent.figu5-1.fna.fbcdn.net/v/t1.0-9/c240.0.720.720a/s851x315/1094951_495404803875222_64201970_n.jpg?_nc_cat=102&_nc_sid=da31f3&_nc_eui2=AeEmJorGG2hyUKsitoyufEX-zc5YPk0GcBbNzlg-TQZwFuME8rLG0c06d_VOcHzqvIo0SAXS_JAvm2lufK8M3Z1b&_nc_ohc=r1JDsd3RgVgAX_K76gl&_nc_ht=scontent.figu5-1.fna&oh=fce97221b80dbd505a2cd9a4bf377605&oe=5EE52F07" alt="Bruno Chan">
       <div class="texto">
-        <p> Sou aprendiz em desenvolvimento web<br> e busco oportunidades de desenvolvimento<br> para atuação na área.
+        <p> Sou aprendiz em desenvolvimento web e busco oportunidades de desenvolvimento para atuação na área.
         </p>  
       </div>
     </div>
@@ -137,41 +138,29 @@
     <h1 class="text-center">Portfólio</h1>
     <h2 class="lead text-center">Acompanhe meus projetos</h2>
     <div class="portfolio-cards">
-      
+      <a href="#">
         <figure>
-        <img class="img-portfolio" src="https://www.fotoefeitos.com/efectos/grandes/coloca-tu-foto-en-un-fotograma.jpg" alt="Projeto 1">
+        <img class="img-portfolio" src="https://secretsurfboards.com.br/wp-content/uploads/2018/03/em_breve.png" alt="Projeto 1">
           <figcaption>Projeto 1</figcaption>
         </figure>
       </a>
       <a href="#">
         <figure>
-          <img class="img-portfolio" src="https://www.fotoefeitos.com/efectos/grandes/coloca-tu-foto-en-un-fotograma.jpg" alt="Projeto 2">
+          <img class="img-portfolio" src="https://secretsurfboards.com.br/wp-content/uploads/2018/03/em_breve.png" alt="Projeto 2">
           <figcaption>Projeto 2</figcaption>
         </figure>
       </a>
       <a href="#">
         <figure>
-          <img class="img-portfolio" src="https://www.fotoefeitos.com/efectos/grandes/coloca-tu-foto-en-un-fotograma.jpg" alt="Projeto 3">
+          <img class="img-portfolio" src="https://secretsurfboards.com.br/wp-content/uploads/2018/03/em_breve.png" alt="Projeto 3">
           <figcaption>Projeto 3</figcaption>
         </figure>
       </a>
       <a href="#">
         <figure>
-          <img class="img-portfolio" src="https://www.fotoefeitos.com/efectos/grandes/coloca-tu-foto-en-un-fotograma.jpg" alt="Projeto 4">
+          <img class="img-portfolio" src="https://secretsurfboards.com.br/wp-content/uploads/2018/03/em_breve.png" alt="Projeto 4">
           <figcaption>Projeto 4</figcaption>
         </figure>
-      </a>
-      <a href="#">
-        <figure>
-          <img class="img-portfolio" src="https://www.fotoefeitos.com/efectos/grandes/coloca-tu-foto-en-un-fotograma.jpg" alt="Projeto 5">
-          <figcaption>Projeto 5</figcaption>
-        </figure>
-      </a>
-      <a href="#">
-        <figure>
-          <img class="img-portfolio" src="https://www.fotoefeitos.com/efectos/grandes/coloca-tu-foto-en-un-fotograma.jpg" alt="Projeto 6">
-          <figcaption>Projeto 6</figcaption>
-         </figure>
       </a>
     </div>
   </section>
@@ -207,7 +196,11 @@
     <div class="container">
       <div class="row">
         <div class="col-xs-12">
-          <p class="text-center">Direitos Reservados®</p>
+          <h1 class="text-center">Conheça também</h1>
+          <div class="parceiros">
+            <a target="_blank" href="http://muchael.com/">Newton Muchael</a>
+            <a target="_blank" href="https://www.instagram.com/panobambu/">panobambu</a>
+          </div>
         </div>
       </div>
     </div>
