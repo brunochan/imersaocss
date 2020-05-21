@@ -51,6 +51,12 @@ body {
   font-size: 4em;
   text-align: center;
 }
+
+@media (min-width: 320px) {
+  .capa h1{
+    font-size: 3em;
+  }
+}
     
 .capa h2{
   color: whitesmoke;
@@ -66,14 +72,21 @@ body {
  /*****SECTION SOBRE*****/   
 
 .Sobre{
+  /*background-image: url('https://c.wallhere.com/photos/77/ce/nyc_newyorkcity_trip_travel_blue_usa_ny_newyork-640639.jpg!d');
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;*/
+
   background-color: rgb(6, 12, 59);
   display: grid;
-  gap: 2em;
+  gap: 0em;
   grid-template-columns: 1;
   align-content: center;
   align-items:center;
   justify-content: center;
   text-align: center;
+  /*opacity: 0.65;*/
 }
 
 .sobre h1{
@@ -81,6 +94,26 @@ body {
   font-family: 'Gruppo', cursive;
   font-size: 3em;
   text-align: center;
+}
+
+@media (min-width: 320px) {
+  .sobre h1{
+    padding-bottom: 30px;
+    padding-top: 55px;
+  }
+}
+
+@media (min-width: 560px) {
+  .sobre h1{
+    padding-bottom: 30px;
+    padding-top: 100px;
+  }
+}
+
+@media (min-width: 800px) {
+  .sobre h1{
+    padding-top: 120px;
+  }
 }
     
 .conteudo {
@@ -91,15 +124,24 @@ body {
   align-items:center;
   justify-content: center;
   text-align: center;
-  margin-top: 40px;
+  margin-top: 100px;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 250px;
   min-height: fit-content;
+}
+
+@media (min-width: 320px) {
+  .conteudo{
+    max-width: 250px;
+    margin-top: 250px;
+  }
 }
 
 @media (min-width: 560px) {
   .conteudo{
-    max-width: 900px;
+    max-width: 400px;
+    margin-top: 300px;
   }
 }
 
@@ -107,17 +149,15 @@ body {
   .conteudo {
     gap: 2em;
     grid-template-columns: 40% 60%;
-    align-content: center;
-    align-items:center;
-    justify-content: center;
-    text-align: left;
-    max-width: 900px;
+    max-width: 600px;
+    padding-bottom: 300px;
   }
 }
 
 @media (min-width: 1200px) {
   .conteudo{
     max-width: 900px;
+    padding-bottom: 250px;
   }
 }
    
@@ -133,6 +173,20 @@ body {
   /*margin-left: 350px;*/
 }
 
+@media (min-width: 320px) {
+  .sobre img{
+    width: 300px;
+  height: 300px;
+  }
+}
+
+@media (min-width: 560px) {
+  .sobre img{
+  width: 350px;
+  height: 350px;
+  }
+}
+
 .texto p{
   color: whitesmoke;
   font-family: 'Gruppo', cursive;
@@ -140,8 +194,15 @@ body {
   margin: 1em 0;
   /*margin-right: 350px;
   margin-left: 50px;*/
-  margin-bottom: 200px;
+  margin-bottom: 160px;
   text-align: justify;
+}
+
+@media(min-width: 800px){
+  .texto p {
+    margin-left: 100px;
+    max-width: 350px;
+  }
 }
 
 /*****SECTION VAZIO*****/
@@ -297,7 +358,7 @@ p{
   color: whitesmoke;
   text-align: center;
   padding: 10px;
-}  
+}
 
 .rodape h1{
   font-family: 'Gruppo', cursive;
