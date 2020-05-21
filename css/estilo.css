@@ -21,7 +21,7 @@ body {
 }
     
 /*breackpoint*/
-@media (min-width: 600px) {
+@media (min-width: 800px) {
   body {
     font-size: 18px;
   }
@@ -35,7 +35,7 @@ body {
 
 /*****SECTION CAPA*****/
 
-.Capa{
+.capa{
   background-image: url('https://c.wallhere.com/photos/77/ce/nyc_newyorkcity_trip_travel_blue_usa_ny_newyork-640639.jpg!d');
   background-position: center top;
   background-repeat: no-repeat;
@@ -71,7 +71,7 @@ body {
 
  /*****SECTION SOBRE*****/   
 
-.Sobre{
+.sobre{
   /*background-image: url('https://c.wallhere.com/photos/77/ce/nyc_newyorkcity_trip_travel_blue_usa_ny_newyork-640639.jpg!d');
   background-position: center top;
   background-repeat: no-repeat;
@@ -98,6 +98,7 @@ body {
 
 @media (min-width: 320px) {
   .sobre h1{
+    font-size: 2em;
     padding-bottom: 30px;
     padding-top: 55px;
   }
@@ -217,7 +218,7 @@ body {
 
 /*****SECTION PORTFÓLIO*****/    
     
-.Portfolio{
+.portfolio{
   background-color: rgb(6, 12, 59);
 }    
 
@@ -318,7 +319,7 @@ p{
 
 /*****SECTION SOCIAL*****/  
   
-.Social{
+.social{
   background-image: url('https://c.wallhere.com/photos/77/ce/nyc_newyorkcity_trip_travel_blue_usa_ny_newyork-640639.jpg!d');
   background-position: center top;
   background-repeat: no-repeat;
