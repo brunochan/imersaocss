@@ -246,13 +246,23 @@ body {
   text-align: center;
   min-height: fit-content; /* tentei usar esse pra limitar o conteudo dentro da pagina*/
 }
+
+@media(min-width: 320px){
+  .portfolio-cards{
+    align-content: center;
+    gap: 0em;
+    grid-template-columns: repeat(2, 200px);
+    justify-content: center;
+    height: calc(100vh - 8em - 48px);
+  }
+}
   
 @media(min-width: 560px){
   .portfolio-cards{
     grid-template-columns: repeat(2, 240px);
     align-content: center;
     justify-content: center;
-    height: calc(100vh - 8em - 48px)
+    height: calc(100vh - 8em - 48px);
   }
 }
 
@@ -261,7 +271,7 @@ body {
     grid-template-columns: repeat(3, 240px);
     align-content: center;
     justify-content: center;
-    height: calc(100vh - 8em - 48px)
+    height: calc(100vh - 8em - 48px);
   }
 }
 
@@ -270,7 +280,7 @@ body {
     grid-template-columns: repeat(4, 240px);
     align-content: center;
     justify-content: center;
-    height: calc(100vh - 8em - 48px)
+    height: calc(100vh - 8em - 48px);
   }
 }
     
@@ -297,6 +307,22 @@ body {
 
 .img-portfolio:hover{
   transform: scale(1.2);
+}
+
+@media(min-width: 320px){
+  .img-portfolio{
+    height: 60px;
+    width: 80px;
+    border-radius: 2px;
+  }
+}
+
+@media(min-width: 560px){
+  .img-portfolio{
+    height: 120px;
+    width: 160px;
+    border-radius: 8px;
+  }
 }
     
 a{
