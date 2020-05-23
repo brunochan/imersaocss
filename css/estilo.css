@@ -245,6 +245,7 @@ body {
   gap: 2em;
   text-align: center;
   min-height: fit-content; /*pra limitar o conteudo dentro da pagina*/
+  perspective: 1000px;
 }
 
 @media(min-width: 320px){
@@ -296,20 +297,47 @@ body {
 .portfolio-cards figure a:hover{
   opacity: 0.8;
 }
+
+.flip-card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+.flip-card:hover {
+  transform: rotateY(180deg);
+}
+
+.card-back,
+.card-front {
+  backface-visibility: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.card-back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255,255,255,0.8);
+  border-radius: 8px;
+  height: 120px;
+  width: 160px;
+  transform: rotateY(180deg);
+}
     
 .img-portfolio{
   height: 120px;
   width: 160px;
   border-radius: 8px;
   object-fit: cover;
-  position: relative;
-  perspective: 1000px;
-  transform-style: preserve-3d;
-  transition: transform 1s;
-}
-
-.img-portfolio:hover{
-  transform: rotatey(180deg);
 }
 
 @media(min-width: 320px){
@@ -326,25 +354,6 @@ body {
     width: 160px;
     border-radius: 8px;
   }
-}
-
-.card-front,
-.card-back {
-  backface-visibility: ;
-  position: absolute;
-  
- 
-}
-
-.card-back {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: rgba(255,255,255,0.8);
-  border-radius: 8px;
-  height: 120px;
-  width: 160px;
-  transform: rotateY(180deg);
 }
 
 .portfolio figure {
