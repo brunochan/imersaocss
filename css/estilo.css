@@ -244,7 +244,7 @@ body {
   font-size: 16px;
   gap: 2em;
   text-align: center;
-  min-height: fit-content; /* tentei usar esse pra limitar o conteudo dentro da pagina*/
+  min-height: fit-content; /*pra limitar o conteudo dentro da pagina*/
 }
 
 @media(min-width: 320px){
@@ -302,11 +302,14 @@ body {
   width: 160px;
   border-radius: 8px;
   object-fit: cover;
-  transition: transform 500ms;
+  position: relative;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  transition: transform 1s;
 }
 
 .img-portfolio:hover{
-  transform: scale(1.2);
+  transform: rotatey(180deg);
 }
 
 @media(min-width: 320px){
@@ -323,6 +326,29 @@ body {
     width: 160px;
     border-radius: 8px;
   }
+}
+
+.card-front,
+.card-back {
+  backface-visibility: ;
+  position: absolute;
+  
+ 
+}
+
+.card-back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255,255,255,0.8);
+  border-radius: 8px;
+  height: 120px;
+  width: 160px;
+  transform: rotateY(180deg);
+}
+
+.portfolio figure {
+  text-align: center;
 }
     
 a{
